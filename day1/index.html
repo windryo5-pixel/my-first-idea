@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>오늘도 힘내세요!</title>
     <meta name="description" content="아름다운 디자인의 첫 번째 아이디어 웹페이지입니다.">
-
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
-
+    
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <div class="container">
         <div class="card">
@@ -53,7 +51,7 @@
                 titleElement.textContent = sentences[currentIndex];
                 titleElement.style.opacity = 1;
                 titleElement.style.transform = 'translateY(0)';
-
+                
                 // Change button color
                 const nextColor = colors[currentIndex];
                 buttonElement.style.background = nextColor;
@@ -62,5 +60,4 @@
         });
     </script>
 </body>
-
 </html>
