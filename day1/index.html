@@ -6,22 +6,52 @@
     <title>오늘도 힘내세요!</title>
     <meta name="description" content="아름다운 디자인의 첫 번째 아이디어 웹페이지입니다.">
     
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Pretendard Font -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <h1 class="title">오늘도 힘내세요!</h1>
-            <p class="subtitle">새로운 시작을 위한 작은 발걸음</p>
-            <button class="next-button">다음 문장 보기</button>
-        </div>
-    </div>
+    <header>
+        <h2>나의 첫 서비스</h2>
+        <nav class="nav-menu">
+            <a href="#">소개</a>
+            <a href="#">기능</a>
+            <a href="#">문의</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="features" class="section">
+            <h3 class="section-title">핵심 기능 소개</h3>
+            <div class="card">
+                <h1 class="title">오늘도 힘내세요!</h1>
+                <p class="subtitle">새로운 시작을 위한 작은 발걸음</p>
+                <button class="next-button">다음 문장 보기</button>
+            </div>
+        </section>
+
+        <section id="reviews" class="section">
+            <h3 class="section-title">사용자 후기</h3>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <img src="assets/user1.png" alt="User 1" class="profile-img">
+                    <p class="review-text">"매일 아침 이 서비스를 보며 긍정적인 에너지를 얻고 있어요. 디자인도 너무 깔끔해서 자꾸 들어오게 되네요!"</p>
+                    <div class="user-info">김지은 님 · 마케터</div>
+                </div>
+                <div class="review-card">
+                    <img src="assets/user2.png" alt="User 2" class="profile-img">
+                    <p class="review-text">"간단하지만 강력한 응원이 필요할 때 최고입니다. 특히 버튼을 누를 때마다 바뀌는 문구들이 정말 마음에 들어요."</p>
+                    <div class="user-info">이민호 님 · 개발자</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2025 My Service</p>
+    </footer>
     <script>
         const sentences = [
             "오늘도 힘내세요!",
@@ -30,10 +60,10 @@
             "이대로 계속 가봅시다."
         ];
         const colors = [
-            "#0071e3", // Blue
-            "#ffcc00", // Yellow
-            "#ff9500", // Orange
-            "#34c759"  // Green
+            "#4ade80", // Light Green (Primary)
+            "#34d399", // Emerald
+            "#2dd4bf", // Teal
+            "#10b981"  // Sea Green
         ];
         let currentIndex = 0;
 
